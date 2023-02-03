@@ -29,7 +29,7 @@ startEl.addEventListener("click", function (event) {
                 timerEl.textContent = timeLeft + ' Second';
                 timeLeft--;
             } else {
-                timerEl.textContent = "You did not pickle The Beast";
+                timerEl.textContent = "Failed";
                 clearInterval(timeInterval);
             }
         }, 1000);
@@ -45,33 +45,33 @@ function loseTime() {
 
 var questionBank = [{
 
-    question: "What is the name of Smalls' stepdad?",
-    answers: ["Adam", "Bill", "Charles", "Doug"],
-    correct: "Bill"
+    question: "What is the first index in an Array?",
+    answers: ["Null", "0", "1", "-1"],
+    correct: "0"
 },
 // var questionBankTwo = {
 {
-    question: "What song is playing when the boys are on the carnival ride?",
-    answers: ["Twist and Shout", "Tossing and Turning", "The Twist", "Tequila"],
-    correct: "Tequila"
+    question: "What does OOP stand for?",
+    answers: ["Object-Oriented Programming", "One-Oriented Programming", "Object-Open Programming", "Optional-Oriented Programming"],
+    correct: "Object-Oriented Programming"
 },
 // var questionBankThree = 
 {
-    question: "According to Benny, what does Yeah-Yeah run like?",
-    answers: ["a Duck", "a Horse", "a Cheetah", "a Turtle"],
-    correct: "a Duck"
+    question: "Which of these is a float value?",
+    answers: ["0.8", "5", "1/2", "-1"],
+    correct: "0.8"
 },
 // var questionBankFour =
 {
-    question: "Which is NOT one of Babe Ruth's nicknames?",
-    answers: ["The Great Bambino", "The Colossus of Clout", "Baby Ruthie", "The Sultan of Swat"],
-    correct: "Baby Ruthie"
+    question: "Who is considered the father of modern Computer Science?",
+    answers: ["Bill Gates", "Steve Wasniac", "Steve Jobs", "Alan Turing"],
+    correct: "Alan Turing"
 },
 // var questionBankFive =
 {
-    question: "How many guys does Squints say The Beast ate while he was a guard dog?",
-    answers: ["120", "185", "173", "150"],
-    correct: "173"
+    question: "What computer company uses a logo in the shape of a fruit?",
+    answers: ["Apple", "IBM", "Dell", "Microsoft"],
+    correct: "Apple"
 }
 ]
 var removeButton = document.getElementsByClassName('button');
@@ -112,11 +112,11 @@ function showQuestionOne() {
                     clickedBtn.style.backgroundColor = "red";
                 }
                 if (userChoice !== correctAnswer) {
-                    wrongNote.textContent = ("You're Killing Me, Smalls!");
+                    wrongNote.textContent = ("Wrong One!");
                     redBtn();
                     loseTime();
                 } else {
-                    rightNote.textContent = "Heros Get Remembered, But Legends Never Die!"
+                    rightNote.textContent = "Great Job Keep it up!"
                     greenBtn();
                     timeLeft = timeLeft + 1
                 }
