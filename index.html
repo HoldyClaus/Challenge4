@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/style.css"/>
+    <link rel="reset" href="./assets/reset.css"/>
+    <title>Sandlot Quiz</title>
+  </head>
+
+  <body>
+    <header class="header-space">
+      <h4 class = "scorelist" id="score-board">See High Scores</h4>
+      <h4 id="countdown"></h4>
+    </header>
+
+    <div id="start-message" class="start-quiz">
+      <h2>Programmers Quiz</h2>
+      <p>Answer the following Programming related questions within the time limit. Incorrect answers will penalize your score/time by ten seconds.</p>
+      <input class="button" id="start" type="button" value="Start Quiz">
+    </div>
+
+    <div class="container">
+
+      <div class="questions" id="question">
+        <h1 id="question-text-1"></h1>
+      </div>
+
+      
+      <div id="high-scores">
+        <h1>High Scores</h1>
+          <ul id="score-list">
+          </ul>
+      </div>
+      
+
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
